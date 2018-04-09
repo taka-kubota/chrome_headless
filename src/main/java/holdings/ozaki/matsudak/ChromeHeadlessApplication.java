@@ -16,8 +16,8 @@ public class ChromeHeadlessApplication {
 
     public static void main(String... args) {
         Selenide.open("https://trade.bitpoint.co.jp/bpj-web/login");
-        Selenide.$(By.id("userid")).setValue("tomotaka.fujishiro@gmail.com");
-        Selenide.$(By.id("passwd")).setValue("Passw0rd");
+        Selenide.$(By.id("userid")).setValue("id");
+        Selenide.$(By.id("passwd")).setValue("pass");
         Selenide.$(By.id("login_btn")).click();
         System.out.println(Selenide.$(By.xpath("//*[@id='assets_table']/tbody/tr[1]/td[3]/span[2]")).getText());
         Selenide.screenshot("bitpoint.co.jp");

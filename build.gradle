@@ -1,0 +1,25 @@
+group 'kubota20180330'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'idea'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral();
+}
+
+sourceCompatibility = targetCompatibility = 1.8
+
+dependencies {
+    compile 'com.codeborne:selenide:4.9'
+    compile 'org.springframework.boot:spring-boot-starter-logging:1.5.9.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+configurations.all {
+    exclude group: 'log4j'
+    exclude module: 'log4j-over-slf4j'
+    exclude module: 'slf4j-log4j12'
+    exclude module: 'slf4j-jdk14'
+    exclude module: 'commons-logging'
+}

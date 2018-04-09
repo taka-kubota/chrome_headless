@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chrome_headless.iml" filepath="$PROJECT_DIR$/.idea/modules/chrome_headless.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chrome_headless_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chrome_headless_main.iml" group="chrome_headless" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chrome_headless_test.iml" filepath="$PROJECT_DIR$/.idea/modules/chrome_headless_test.iml" group="chrome_headless" />
+    </modules>
+  </component>
+</project>
